@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project-Real Estate Analysis </title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Rubik:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="header" role="banner" class="probootstrap-header " style="background-color:#567279;position: relative;">
+        <div class="container">
+
+            <a href="#" class="probootstrap-burger-menu visible-xs"><i>Menu</i></a>
+            <div class="mobile-menu-overlay"></div>
+
+            <nav role="navigation" class="probootstrap-nav hidden-xs">
+                <ul class="probootstrap-main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                </ul>
+                <div class="extra-text visible-xs">
+                    <a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
+                    <h5>Connect</h5>
+                    <ul class="social-buttons">
+                        <li>
+                            <a href="https://www.linkedin.com/in/guoqianhui/" target="_blank" title="LinkedIn"><i class="icon-linkedin2"></i></a>
+
+                        </li>
+                        <li>
+                            <a href="mailto:guoqianhui0409@gmail.com" title="Send me a Email"><i class="far fa-envelope"> </i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/lilikwok" target="_blank" title="Github"><i class="icon-github2"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- END: header -->
+    <div class="probootstrap-main-content text-center" style="margin: 0 auto;">
+        <h2 style=" color: #567279 ;margin-left:20px;"><span style="color: #a6a6a6">Project: </span>Automatic Sales Report</h2>
+        <p class="mb40" style=" font-size: 15px; color: #a6a6a6"> Techniques: Python Pipeline, SQL, ETL <br></p>
+        <div class="mb20"> 
+            <h3>{{ top5 }}</h3>
+            {{ top5table }}
+        </div>
+        <div class="mb20"> 
+            <h3>{{ top2sold }}</h3>
+            {{ top2soldtable }}
+        </div>
+        <div class="mb20"> 
+            <h3>{{ prodtren }}</h3>
+            {{ prodtrentable }}
+            <img src= "{{ prodtrenplot }} ">
+        </div>
+        <div class="mb20"> 
+            <h3>{{ dayavgsale }}</h3>
+            {{ dayavgsaletable }}
+            <img src= "{{ dayavgsaleplot }}" >
+        </div>
+        <div class="mb20"> 
+            <h3>{{ moneysale }}</h3>
+            {{ moneysaletable }}
+            <img src= "{{ moneysaleplot }}" >
+        </div>
+        <div class="mb20"> 
+            <h3>{{ customer_spending }}</h3>
+            {{ customer_spendingtable }}
+            <img src= "{{ customer_spendingplot}}" >
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="probootstrap-footer-spacer"></div>
+    <footer class="probootstrap-footer">
+        <div class="probootstrap-footer-section">
+            <div class="container">
+                <div class="row mb80">
+                    <div class="col-md-8 ">
+                        <div class="probootstrap-link-wrap probootstrap-footer-widget">
+                            <h3>More Projects</h3>
+                            <ul>
+
+                                <li><a href="#">Fraud Prediction </a></li>
+                                <li><a href="#">Sales Report Pipeline </a></li>
+                                <li><a href="#">Cornavirus Analysis Dashboard </a></li>
+                                <li><a href="#">Bookstore Database Management</a></li>
+                                <li><a href="targetgroup_memo.html">Target Group Analysis</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 ">
+                        <div class="probootstrap-footer-widget">
+                            <h3>Connect with me</h3>
+                            <ul class="probootstrap-footer-social">
+                                <li>
+                                    <a href="https://www.linkedin.com/in/guoqianhui/" target="_blank" title="LinkedIn"><i class="icon-linkedin2"></i></a>
+
+                                </li>
+                                <li>
+                                    <a href="mailto:guoqianhui0409@gmail.com" title="Send me a Email"><i class="far fa-envelope"> </i></a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/lilikwok" target="_blank" title="Github"><i class="icon-github2"></i></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="text-center">© 2020 Qianhui Guo All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="icon-chevron-thin-up"></i></a>
+    </div>
+
+
+    <script src="js/scripts.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
